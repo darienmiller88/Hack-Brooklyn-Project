@@ -8,14 +8,9 @@ import (
 
 func main() {
 	fmt.Println("Server is running")
-	// fs := http.FileServer(http.Dir("css"))
-	// http.Handle("/css/", http.StripPrefix("/css/", fs))
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/about", aboutHandler)
-
-	//I hope this works :/...
-
 	http.ListenAndServe(":5000", nil)
 }
 
