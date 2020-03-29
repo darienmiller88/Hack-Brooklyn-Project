@@ -27,7 +27,6 @@ navbar[type="text"]:focus {
   overflow: hidden;
 }
 .navbar a {
-<<<<<<< HEAD
   float: center aligin;
   color: #f2f2f2;
   text-align: center;
@@ -47,27 +46,3 @@ navbar[type="text"]:focus {
   background-color: rgb(86, 76, 175);
   color: rgb(255, 255, 255);
 }
-=======
-    float: center aligin;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-<<<<<<< HEAD
-=======
-  /* Change the color of links on hover */
-  .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
->>>>>>> 7fba5c9673ed8eada01708abcd1517b03ee88bf4
-  .navbar a.active {
-    background-color: rgb(86, 76, 175);
-    color: rgb(255, 255, 255);
-  }
->>>>>>> 0078a05dfdc1d31e55507838997b08a82169d77e
