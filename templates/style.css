@@ -35,6 +35,16 @@ navbar[type="text"]:focus {
     font-size: 17px;
   }
   
+<<<<<<< HEAD
+=======
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+>>>>>>> 7fba5c9673ed8eada01708abcd1517b03ee88bf4
   .navbar a.active {
     background-color: rgb(86, 76, 175);
     color: rgb(255, 255, 255);
