@@ -26,6 +26,7 @@ func main() {
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/index.html", indexHandler)
 	http.HandleFunc("/about.html", aboutHandler)
+	http.HandleFunc("/map.html", mapHandler)
 	http.HandleFunc("/contact.html", contactHandler)
 	http.HandleFunc("/login.html", logInHandler)
 	http.HandleFunc("/signup.html", signUpHandler)
@@ -78,5 +79,10 @@ func logInHandler(writer http.ResponseWriter, request *http.Request) {
 
 func signUpHandler(writer http.ResponseWriter, request *http.Request) {
 	myTemplate, _ := template.ParseFiles("templates/signup.html")
+	myTemplate.Execute(writer, request)
+}
+
+func mapHandler(writer http.ResponseWriter, request *http.Request) {
+	myTemplate, _ := template.ParseFiles("templates/map.html")
 	myTemplate.Execute(writer, request)
 }
